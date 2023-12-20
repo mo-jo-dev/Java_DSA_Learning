@@ -7,6 +7,8 @@ public class loops{
             count++;
         }
 
+
+        //For loop
         for(count = 0; count<5; count++){
             System.out.println(count);
         }
