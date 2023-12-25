@@ -15,8 +15,8 @@ public class Main
         int rno1 = 02;
         int rno2 = 03;
         int rno3 = 04;
-        int rno2 = 05;
-        int rno3 = 06;
+        int rno4 = 05;
+        int rno5 = 06;
 
         //This is not the right method, we have arrays for that.
 
@@ -27,11 +27,15 @@ public class Main
         // or directly
         // int [] rnos = {1, 2, 3, 4, 5, 6};
 
-        int[] rnos;  //Declaration: Array is getting defined in the stack.
-        rnos = new int[5];  //initialisation: actually here the object is getting created inside the heap. 
+        // int[] rnos;  //Declaration: Array is getting defined in the stack.
+        // rnos = new int[5];  //initialisation: actually here the object is getting created inside the heap. 
 
-        
+        // int a = 0;  //This will not give us error
+        // String str = null;          //This will not give us error
+        // int b = null;  //This will give us error as primitive types can't take the value of a literal
 
+
+        // 0 is the reference value for integer array and null is the reference value for string array.
 
     }
 
