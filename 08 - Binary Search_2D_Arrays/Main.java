@@ -34,13 +34,13 @@ public class Main
 }
 
 /*
-🧠 Binary search in a 2D array takes a maximum of O(n^2) comparisons in the worst case, where n is the number of rows or columns.
+🧠 Linear search in a 2D array takes a maximum of O(n^2) comparisons in the worst case, where n is the number of rows or columns.
 🔄 In a row-wise and column-wise sorted matrix, you can reduce the search space efficiently by comparing and eliminating rows or columns based on the target element.
-⏰ Searching in a sorted matrix using binary search has a time complexity of O(n), where n is the number of rows or columns.
+⏰ Searching in a sorted matrix using binary search has a time complexity of O(2n), where n is the number of rows or columns.
 🐛 Debugging code and using debug pointers helps understand and verify the functionality of the implemented algorithm.
 🎯 In a strictly sorted matrix, applying binary search by comparing middle elements can efficiently locate the target element.
 🎯 Binary search in 2D arrays involves reducing the search space by performing binary search on either middle columns or rows.
-📉 Three cases in binary search: If the element is equal to the target, you found the answer. If it's greater, ignore rows below; if it's less, ignore rows above, reducing the search space.
+📉 Three cases in binary search: If the element is equal to the target, you found the answer. If it's greater, ignore that column; if it's less, ignore rows above, reducing the search space.
 🕵️ When only two rows are remaining, check if the target is in the middle column. If not, divide the search into four parts and perform binary search in each part.
 ⏰ Time complexity: O(log n + log m), where n is the number of rows and m is the number of columns. Space complexity is constant.
 🖥️ The code implementation involves handling edge cases, binary search in individual rows, and performing the main search on middle columns to find the target in a sorted 2D matrix.
