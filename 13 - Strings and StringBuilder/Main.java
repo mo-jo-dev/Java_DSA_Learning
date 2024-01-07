@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Main
 {
     public static void main(String[] args){
+        System.out.println(Arrays.toString(args)); //CMD line args
         Scanner in = new Scanner(System.in);
         String name = "Mohit";
         System.out.println(name);
@@ -15,6 +16,14 @@ public class Main
         String a1 = new String("name");
         String b1 = new String("name");
         System.out.println(a1==b1);  // Will give false as a and b are not pointing to same value in pool rather pointing to two different values in heap;
+
+        // For checking the value only irrespective of the fact whether it's in the pool or not, we use
+        String a2 = "name";
+        String b2 = "name";
+        System.out.println(a1.equals(b1));
+
+        // for getting the value at a index, we use:
+        System.out.println(b2.charAt(0));
 
     }
 }
