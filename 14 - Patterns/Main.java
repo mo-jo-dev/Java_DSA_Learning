@@ -17,6 +17,10 @@ public class Main
         System.out.println();
         pattern5(5);
         System.out.println();
+        pattern28(5);
+        System.out.println();
+        pattern30(5);
+        System.out.println();
     }
 
     static void pattern1(int n){
@@ -65,4 +69,35 @@ public class Main
             System.out.println();
         }
     }
+
+    static void pattern28(int n){
+        for(int row = 0; row < 2*n; row++){
+            int totalColsInRow = (row < n) ? row : 2*n - row;
+            int noOfSpaces = n - totalColsInRow;
+            for(int s = 0; s < noOfSpaces; s++){
+                System.out.print(" ");
+            }
+
+            for(int col = 0; col < totalColsInRow; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern30(int n){
+        for(int row = 1; row <= n; row++){
+            for(int s = 0; s < n - row; s++){
+                System.out.print("  ");
+            }
+            for(int col = row; col >= 1; col--){
+                System.out.print(col + " ");
+            }
+            for(int col = 2; col <= row; col++){
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }
