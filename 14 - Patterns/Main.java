@@ -21,6 +21,8 @@ public class Main
         System.out.println();
         pattern30(5);
         System.out.println();
+        pattern17(4);
+        System.out.println();
     }
 
     static void pattern1(int n){
@@ -94,6 +96,22 @@ public class Main
                 System.out.print(col + " ");
             }
             for(int col = 2; col <= row; col++){
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern17(int n){
+        for(int row = 1; row <= 2*n-1; row++){
+            int c =  (row < n) ? row : 2*n - row;
+            for(int s = 0; s < n - c; s++){
+                System.out.print("  ");
+            }
+            for(int col = c; col >= 1; col--){
+                System.out.print(col + " ");
+            }
+            for(int col = 2; col <= c; col++){
                 System.out.print(col + " ");
             }
             System.out.println();
